@@ -6,9 +6,9 @@ const config = {
     nodeList: [
         {
             id: 'Node 1',
-            hostname: 'localhost',
-            port: 2333,
-            password: 'youshallnotpass'
+            hostname: 'lava-all.ajieblogs.eu.org',
+            port: 80,
+            password: 'https://dsc.gg/ajidevserver'
         }
     ],
 
@@ -19,7 +19,7 @@ const config = {
 
     bot: {
         textCommand             : true,                 // Whether to enable text command
-        slashCommand            : true,                 // Whether to enable slash command
+        slashCommand            : falsae,                 // Whether to enable slash command
 
         // OAUTH2 mode requires setting 'admin', 'clientSecret' value
         admin                   : [],                   // Admin users, It must be the user ID (string[])
@@ -28,12 +28,12 @@ const config = {
 
         clientSecret            : '',
 
-        name                    : 'Music Disc',
-        prefix                  : '+',                  // Text command prefix
+        name                    : 'Pandie',
+        prefix                  : '-',                  // Text command prefix
         status                  : 'online',             // 'online' | 'idle' | 'dnd'
         activity: {
             type                : 0,                    // https://discord.com/developers/docs/topics/gateway-events#activity-object-activity-types
-            name                : '+help | music',
+            name                : '-p',
             // state               : '',
             // url                 : '',                // The streaming type currently only supports Twitch and YouTube. Only https://twitch.tv/ and https://youtube.com/ urls will work.
         },
@@ -44,7 +44,7 @@ const config = {
             warning             : '#FFFF00',            // Warning embed color
         },
         volume: {
-            default             : 50,
+            default             : 100,
             max                 : 100,
         },
         // Auto leave channel settings
